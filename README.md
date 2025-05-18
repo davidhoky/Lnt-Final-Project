@@ -26,3 +26,33 @@ Buka terminal (Git Bash atau CMD), lalu jalankan:
 ```bash
 git clone https://github.com/NAMA-KAMU/final_project.git
 cd final_project
+
+1. **Install Dependency PHP**
+
+   ```bash
+   composer install
+   ```
+
+2. **Install Dependency Frontend**
+
+   ```bash
+   npm install
+   ```
+
+3. **Copy dan atur file .env**
+
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+4. **(Opsional) Set database di .env**
+   Pandu dia untuk ganti `DB_DATABASE`, `DB_USERNAME`, dll di file `.env`.
+
+5. **Jalankan server lokal**
+
+   ```bash
+   php artisan serve
+   ```
+
+---
